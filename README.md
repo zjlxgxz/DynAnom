@@ -1,12 +1,13 @@
-# Codebase for   _Subset Node Anomaly Tracking over Large Dynamic Graphs_  @KDD-2022
-## Authors: _Xingzhi Guo, Baojian Zhou and Steven Skiena_
-## 1. Download data:
+# Codebase for _[Subset Node Anomaly Tracking over Large Dynamic Graphs](https://arxiv.org/abs/2205.09786)_ @KDD-2022
+## Authors: _[Xingzhi Guo](https://zjlxgxz.github.io/zjlxgxz/), [Baojian Zhou](https://baojian.github.io) and [Steven Skiena](https://www3.cs.stonybrook.edu/~skiena/)_
+
+## 0. Download data:
 Download the compiled Person-Event Graph, and unzip them into the folder toy-data
 - Person-Event Graph Link:
 ```
  https://drive.google.com/drive/folders/1nu-2Lx80WGD9I7cjXZ1H1SKauTr_UIe7?usp=sharing
 ```
-## 2. Set up env
+## 1. Set up env
 
 ```
 sh ./recipe/setup.sh
