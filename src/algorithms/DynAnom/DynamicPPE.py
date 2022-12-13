@@ -64,7 +64,7 @@ def get_hash_embed(node_id_2_dim_id, node_id_2_sign, dim, n, indices, indptr, da
         vals = data[indptr[i]:indptr[i + 1]]
         emb_vec = emb_mat[i,:]
         for j, val in zip(cols,vals):
-            emb_vec[node_id_2_dim_id[j]] =+ node_id_2_sign[j]* np.max( np.array([np.float32(0.0), np.float32(np.log(val*n))]) )
+            emb_vec[node_id_2_dim_id[j]] += node_id_2_sign[j]* np.max( np.array([np.float32(0.0), np.float32(np.log(val*n))]) )
     return emb_mat
 
 @numba.njit(cache =True)
